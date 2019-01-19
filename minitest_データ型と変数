@@ -1,0 +1,51 @@
+データ型と変数
+
+Q1. 変数名として使用できるものは(2つ)
+ア colla-tech
+イ colla_tech
+ウ $price
+エ 10price
+
+変数名ルール
+・先頭は英字(a-z, A-Z)、_(下線), $(ドルマーク)のいずれか
+・2文字目以降は上記文字、または数字(0-9)のいずれか
+・Javaの予約語、true、false、null以外である
+
+Q2. 変数名として使用できるものは(1つ)
+ア int
+イ class
+ウ intVar
+エ public
+
+ほとんど予約語
+intVarのように予約語が変数名の一部になっている分には問題ない
+
+Q3. 次の中でコンパイルエラーにならないものは
+ア char moji = "A"
+イ char moji = 'AB'
+ウ char moji = 'A'
+エ char moji = "ABC"
+
+charのリテラルは''シングルクォーテーション
+charは一つの文字を表すプリミティブ型
+複数の文字列はString型
+Javaは16ビットのUnicodeで文字を表すため、日本語の漢字も一文字換算
+
+Q4.int型の一次元配列intArrayを作成するのに適切なコードは
+ア int[] intArray = new int[10];
+イ int[] intArray = int[10];
+ウ int[] intArray = new int(10);
+エ int[] intArray = new int[0..10];
+
+配列はnewで領域を確保する
+配列の大きさは[]で指定する
+[]内には配列の要素数だけ指定する
+
+Q5.String型の1次元配列stringArrayを作成するのに適切なコードは
+ア String stringArrray[3] = {"one", "two", "three"};
+イ String[3] stringArrray = {"one", "two", "three"};
+ウ String[] stringArrray = {"one", "two", "three"};
+エ String stringArrray = {"one", "two", "three"};
+
+配列の初期値を{}で指定する場合、要素数は指定しない。初期値の数から自動的に決定される。
+エは[]がないためstringArrayは単なる文字列型の変数を表す。
