@@ -16,8 +16,8 @@ public class Kuku {
 	    }
 	}
 
-	ans = (j*q>9)? (""+ i*j) : (i*j) ;
-	                System.out.print(ans);
+	System.out.print((j*q>9)? (""+ i*j) : (i*j) );
+	                
 
 	*/
 
