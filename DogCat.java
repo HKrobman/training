@@ -11,9 +11,6 @@ public class DogCat {
       String t = st.nextToken();
       if(t.equals("cat")) count++;
       if(t.equals("dog")) count--;
-
-
-
     }
     winner = (count > 0) ? "cat" : "dog" ;
     System.out.println(winner);
